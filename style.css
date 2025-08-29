@@ -13,10 +13,11 @@ body {
 }
 
 header {
-    padding: 10px 4rem;
+    padding: 10px 10rem;
     flex: 1;
     display: flex;
     justify-content: space-between;
+    align-items: center;
 }
 
 .logo {
@@ -25,13 +26,14 @@ header {
 }
 
 li > a {
-    color:#F9FAF8;
+    color: #E5E7EB;
     padding: 5px;
     border-radius: 3px;
+    transition-duration: 0.4s;
 }
 
 li > a:hover {
-    color:#F9FAF8;
+    color:#E5E7EB;
     background-color: #394a63;
 }
 
@@ -46,5 +48,143 @@ header, .hero, footer {
 }
 
 img {
-    width: 20vw;
+    width: 100%;
+    display: block;
+}
+
+.hero {
+    display: flex;
+    justify-content: space-between;
+    gap: 3em;
+    padding: 4rem 10rem;
+}
+
+.cliffs {
+    width: 50%;
+    text-align: end;
+}
+
+h1 {
+    font-size: 48px;
+    font-weight: 900;
+}
+
+.hero-text > p {
+    font-size: 18px;
+    color: #E5E7EB;
+}
+
+button {
+    padding: 4px 24px;
+    margin-top: 10px;
+    border-radius: 6px;
+    border: 0;
+    font-size: 18px;
+    font-weight: 700;
+    max-height: fit-content;
+}
+
+.hero button {
+    color: #E5E7EB;
+    background-color: #3882F6;
+    border: 1px #3882F6 solid;
+    transition-duration: 0.2s;
+}
+
+.hero button:hover {
+    color: #3882F6;
+    background-color: #E5E7EB;
+    border: 1px #3882F6 solid;
+}
+
+main {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 3rem 14rem;
+    gap: 2em;
+}
+
+h2 {
+    font-size: 36px;
+    font-weight: 900;
+    color: #1F2937;
+}
+
+.cards {
+    display: flex;
+    justify-content: center;
+    gap: 1rem;
+    /* flex-wrap: wrap; */
+    max-width: 100%;
+}
+
+.card {
+    flex: 1;
+    /* border: 1px solid green; */
+    display: flex;
+    gap: 5px;
+    flex-direction: column;
+    justify-content: space-between;
+    font-size: 14px;
+    font-weight: 300;
+}
+
+.card img {
+    border-radius: 5px;
+}
+
+.card a {
+    color: #1F2937;
+    text-shadow: 1px 1px 10px #9ebaf7;
+    transition-duration: 0.2s;
+}
+
+.card a:hover {
+    text-shadow: 1px 1px 10px #3e78f3;
+}
+
+.quote {
+    padding: 5rem 14rem;
+    background-color: #E5E7EB;
+    font-size: 36px;
+    font-weight: lighter;
+    font-style: italic;
+    margin: 8vh 0;
+}
+
+.cited {
+    font-size: 20px;
+    font-weight: 400;
+    text-align: right;
+    font-style: normal;
+}
+
+.newsletter {
+    margin: 5rem 10rem;
+    padding: 2.5rem 5rem;
+    background-color: #3882F6;
+    border-radius: 10px;
+    color: white;
+    display: flex;
+    justify-content: space-between;
+}
+
+.newsletter button {
+    flex-shrink: 0;
+    color: white;
+    background-color: #3882F6;
+    border: 2px solid white;
+    transition-duration: 0.2s;
+}
+
+.newsletter button:hover {
+    background-color: white;
+    color: #3882F6
+}
+
+footer {
+    text-align: center;
+    padding: 2rem;
+    font-size: 14px;
 }
