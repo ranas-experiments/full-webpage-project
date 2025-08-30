@@ -147,10 +147,13 @@ h2 {
 .quote {
     padding: 5rem 14rem;
     background-color: #E5E7EB;
+    margin: 8vh 0;
+}
+
+blockquote {
     font-size: 36px;
     font-weight: lighter;
     font-style: italic;
-    margin: 8vh 0;
 }
 
 .cited {
